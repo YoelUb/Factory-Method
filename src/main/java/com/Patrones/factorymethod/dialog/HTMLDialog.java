@@ -3,8 +3,9 @@ package com.Patrones.factorymethod.dialog;
 import com.Patrones.factorymethod.button.Button;
 import com.Patrones.factorymethod.button.HTMLButton;
 import com.Patrones.factorymethod.checkbox.CheckBox;
+import com.Patrones.factorymethod.checkbox.HTMLCheckBox;
 
-public class WebDialog extends Dialog {
+public class HTMLDialog extends Dialog {
 
     @Override
     Button createButton() {
@@ -13,6 +14,6 @@ public class WebDialog extends Dialog {
 
     @Override
     CheckBox createCheckBox() {
-        return null;
+        return new HTMLCheckBox();
     }
 }

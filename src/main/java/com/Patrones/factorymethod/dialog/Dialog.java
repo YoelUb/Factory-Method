@@ -13,5 +13,8 @@ public abstract class Dialog {
         CheckBox checkBox = createCheckBox();
         okButton.onClick();
         okButton.render();
+        checkBox.onClick();
+        checkBox.render();
+
     }
 }
